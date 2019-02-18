@@ -42,7 +42,7 @@ class Logger
 
     public function toFile($file = false)
     {
-        $mess = $this->mess;
+        $mess = date('Y-m-d H:i:s ') . (string) $this->mess;
         
         if (empty($mess)) {
             $mess = debug_backtrace();
