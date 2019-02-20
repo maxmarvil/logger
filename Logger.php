@@ -49,9 +49,9 @@ class Logger
         }
         
         if ($file) {
-            error_log($mess, 3, date($file));
+            error_log($mess, 3, $file);
         } else {
-            error_log($mess, 3, date($this->file_path));
+            error_log($mess, 3, $this->file_path);
         }
 
         return $this;
