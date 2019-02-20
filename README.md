@@ -3,7 +3,7 @@
 Need tests
 
 
-`
+```
 $logger = new Logger();
 // or
 $logger = new Logger('/log.txt);
@@ -15,4 +15,4 @@ $logger->mess('Messag text')->toFile()->print();
 $logger->print();
 // save stack trace
 $logger->toFile('/log.log')
-`
+```
